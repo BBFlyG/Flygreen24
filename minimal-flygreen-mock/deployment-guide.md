@@ -1,6 +1,6 @@
 # Guaranteed Vercel Deployment Guide for FlyGreen
 
-This guide provides step-by-step instructions for deploying your FlyGreen Next.js project to Vercel. This fresh project has been specifically created to ensure compatibility with Vercel's deployment system.
+This guide provides step-by-step instructions for deploying your ultra-simplified FlyGreen Next.js project to Vercel. This minimal version has been specifically created to ensure compatibility with Vercel's deployment system.
 
 ## Prerequisites
 
@@ -13,14 +13,14 @@ This guide provides step-by-step instructions for deploying your FlyGreen Next.j
 
 1. Go to [GitHub](https://github.com) and log in
 2. Click the "+" icon in the top-right corner and select "New repository"
-3. Name your repository (e.g., "flygreen-website")
+3. Name your repository (e.g., "flygreen-minimal")
 4. Keep it as a Public repository
 5. Click "Create repository"
 
 ### Step 2: Upload Your Project Files
 
 1. On your new repository page, click "uploading an existing file" link
-2. Extract the `fresh-flygreen-export.zip` file you downloaded from this chat
+2. Extract the `minimal-flygreen.zip` file you downloaded from this chat
 3. Drag and drop all the extracted files and folders to the GitHub upload area
 4. Click "Commit changes"
 
@@ -28,12 +28,9 @@ This guide provides step-by-step instructions for deploying your FlyGreen Next.j
 
 1. Go to [Vercel](https://vercel.com) and log in with your GitHub account
 2. Click "Add New..." and select "Project"
-3. Find and select your "flygreen-website" repository from the list
+3. Find and select your "flygreen-minimal" repository from the list
 4. Vercel will automatically detect that it's a Next.js project
-5. In the "Build and Output Settings" section, make sure:
-   - Framework Preset is set to "Next.js"
-   - Build Command is set to "npm run build" (default)
-   - Output Directory is left blank (default)
+5. Keep all the default settings - do not change anything
 6. Click "Deploy"
 
 ### Step 4: Wait for Deployment
@@ -44,18 +41,19 @@ This guide provides step-by-step instructions for deploying your FlyGreen Next.j
 
 ### Step 5: View Your Live Website
 
-1. Click on the link provided by Vercel (it will look like `flygreen-website.vercel.app`)
+1. Click on the link provided by Vercel (it will look like `flygreen-minimal.vercel.app`)
 2. Your FlyGreen website is now live on the internet!
-3. You can share this link with others to show them your website
 
 ## Why This Approach Works
 
-This fresh Next.js project has been created using the official Next.js starter template with:
+This ultra-simplified Next.js project has been created with:
 
-1. Compatible versions of Next.js (14.0.4) and React (18.2.0)
-2. Proper project structure that Vercel expects
-3. Clean configuration files without any conflicting settings
-4. All the design elements from the original mockup integrated seamlessly
+1. Older, stable versions of Next.js (13.5.6) and React (18.2.0)
+2. JavaScript instead of TypeScript to eliminate any TypeScript-related issues
+3. Minimal configuration files with standard settings
+4. Traditional Next.js pages directory structure (not app directory)
+5. All styling contained in a single CSS file
+6. No external dependencies beyond the essential Next.js and React packages
 
 ## Making Changes to Your Website
 
@@ -82,5 +80,3 @@ If you encounter any issues:
 
 1. Vercel has excellent [documentation](https://vercel.com/docs) and [support](https://vercel.com/help)
 2. For Next.js specific questions, refer to the [Next.js documentation](https://nextjs.org/docs)
-
-Remember, this is just the beginning! As you develop the full functionality of your website, you can continue to use this same workflow to deploy updates.
